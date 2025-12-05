@@ -1,0 +1,7 @@
+alert udp any any -> 10.0.0.5 5000 (
+    msg:"NS3 LAB: Possible UDP flood towards victim 10.0.0.5:5000";
+    threshold:type both, track by_src, count 100, seconds 1;
+    classtype:attempted-dos;
+    sid:1000001;
+    rev:1;
+)

@@ -1,0 +1,22 @@
+# NS-3 build & logs
+*.pcap
+*.xml
+*.log
+
+# Suricata outputs
+suricata/*.json
+suricata/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# LaTeX build files
+*.aux
+*.out
+*.toc
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
